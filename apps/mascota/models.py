@@ -6,6 +6,9 @@ class Vacuna(models.Model):
     """docstring for ClassName"""
     nombre = models.CharField(max_length=50)
 
+    def __str__(self):
+        return '{}'.format(self.nombre)
+
 # Create your models here.
 class Mascota(models.Model):
     nombre = models.CharField(max_length=50)
